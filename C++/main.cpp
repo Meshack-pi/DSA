@@ -39,6 +39,12 @@ int main(){
     cout << "Student course " << StudentCourse << "\n";
     cout << "Student ID " << StudentID << "\n";
     cout << "Student age " << StudentAge << "\n";
+    //C++ taking inputs from the user
+    string MyName;
+    cout << "What is your name: ";
+    cin >> MyName;
+    cout << "Your name is: " << MyName <<endl;
+    cout << "Code executed!\n";
 
 
     return 0;
