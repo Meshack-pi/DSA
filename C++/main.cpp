@@ -40,13 +40,34 @@ int main(){
     cout << "Student ID " << StudentID << "\n";
     cout << "Student age " << StudentAge << "\n";
     //C++ taking inputs from the user
-    string MyName;
-    cout << "What is your name: ";
-    cin >> MyName;
-    cout << "Your name is: " << MyName <<endl;
-    cout << "Code executed!\n";
+    // string MyName;
+    // cout << "What is your name: ";
+    // cin >> MyName;
+    // cout << "Your name is: " << MyName <<endl;
+    // cout << "Code executed!\n";
+    //Addition assignment operator
+    //The addition assignment operator is used to add a value to a variable
+    //Example
+    int value1 = 3;
+    cout << "The value of value1 is: " << value1 << "\n";
+    //Subtraction assignment operator
+    int value2 = 5;
+    value2 -= 2;
+    cout << "The value of value2 is: " << value2 << "\n";
+    int test;
+    test = value2 & value1;
+    cout << "The value of test is: " << test << "\n";   
+    //Bitwise AND operateor returns 1 only if the LSB least significant bit rightmost bit is 1
+    //Bitwise OR operator returns 1 if any of the bits is 1
+    //Same with XOR, NOR, XNOR, XAND, XNAND
 
-
+    //Comparison operators
+    //To check if values are Equal to, not equal to, greater than, less than, greater than or equal to, less than or equal to
+    //example
+    //Check if value1 is equal to value2
+    bool equalityCheck;
+    equalityCheck = value1 == value2;
+    cout << "The value of test is: " << equalityCheck << "\n";
     return 0;
 }
 
