@@ -1,5 +1,7 @@
 #include <iostream>
+#include <string>
 using namespace std;
+
 int main(){
     cout << "Hello world"<< endl;
     //This outputs a string/text and starts a new line
@@ -68,6 +70,18 @@ int main(){
     bool equalityCheck;
     equalityCheck = value1 == value2;
     cout << "The value of test is: " << equalityCheck << "\n";
+    //Test on the logical operators
+    //Logical AND
+    int IntegerX = 5;
+    int IntegerY = 10;
+    bool LogicalAND;
+    LogicalAND = (IntegerX == 5) && (IntegerY == 1);
+    //Ths will return true (0)  if both conditions are true
+    cout << "The value of Logical AND is: " << LogicalAND << "\n";
+    string aString = "This is a string Variable";
+    cout << aString;
+
+
     return 0;
 }
 
