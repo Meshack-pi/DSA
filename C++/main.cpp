@@ -80,7 +80,49 @@ int main(){
     cout << "The value of Logical AND is: " << LogicalAND << "\n";
     string aString = "This is a string Variable";
     cout << aString;
-
+    //String concatenation
+    string StringNumber1 = "This is a string ";
+    string StringNumber2 = "This is the second string\n";
+    cout << StringNumber1+ StringNumber2;
+    //Concatenated
+    //Concatenation using the append function since string is an object and has methods
+    cout << StringNumber1.append(StringNumber2);
+    //Completeted concatenation using append function
+    //Strings are concatenated and numbers are added
+    //For example
+    string number20 = "20";
+    string number39 = "39\n";
+    string dk = number20 + number39;
+    cout << dk;
+    //The result for the above concatenation is 2039 and not 59
+    //If you try to add a string and a number an error will occur because they are not of the same type
+    //Example tested above
+    //String length
+    string text= "SMARTPEOPLE";
+    int stringLength = text.length();
+    cout << "The string length is: " << stringLength <<endl ;
+    //To get the lenght of the string use function .length()
+    //You can use either size or length they both perform the same functionality
+    //Accessing values of a string, use the square brackets with the index you want to access eg [2] accesses the third item in the string indexing starts from 0
+    cout<< text[9] <<endl;
+    //Accessed the letter S on the 10th position at index 9 text[9]
+    //You can change the value of a certain position by replacing the value at an index for example
+    text[3] = 'C';
+    //changed the fourth letter R to C 
+    cout<<text <<endl;
+    //The C++ String libaray also has an at function that enables one to access values as displayed above
+    cout << text.at(3)<<endl; //This will display letter C with is at index 3 and was replaced above
+    cout << text.at(text.size()-1); //This will display the last character in the string Displays letter E
+    //To display special characters in c++ \' will display ' , \" for double quotes, \\ for backslash
+    //To allow user input use the extraction operator >> cin, 
+    //When working with strings, we use the getline because cin considers a space as a terminating character which means
+    //It can only store a single word
+    //Let's use getline irl
+    cout << "\n";
+    string UserName;
+    // cin >> UserName; this will only display the first word
+    getline(cin, UserName); // This will display everything that the user inputs
+    cout << UserName;
 
     return 0;
 }
