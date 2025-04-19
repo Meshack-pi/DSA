@@ -32,8 +32,24 @@ int main(){
             cout<<"Sunday";
             break;
     }
-    const string username = "marley";
-    cout << "Your username is: " << username << endl;
+    //The default keyword specifies some code to run if there is no case match
 
+    int stanza = 4;
+    cout<<"Which stanza would you like: eg 1, 2, 3  ";
+    // cin>>stanza;
+    switch(stanza){
+        case 1:
+            cout<<"Eee mumngu nguvu yetu\n";
+            break;
+        case 2:
+            cout<<"Natujenge taifa letu\n";
+            break;
+        case 3:
+            cout<<"Amkeni ndugu zetu\n";
+            break;
+        default:
+            cout<< "You have chosen the wrong input format try again\n";
+            //Must end with a semi color
+    }
     return 0;
 }
