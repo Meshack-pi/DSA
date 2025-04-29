@@ -10,7 +10,7 @@ int main(){
     RectangleArea = RectangleWidth * RectangleLength;
     cout <<"The lenght of the rectangle is " << RectangleLength<< "\n";
     cout << "The width of the rectangle is " << RectangleWidth << "\n";
-    cout << "The area of this Rectangle is " << RectangleArea;
+    cout << "The area of this Rectangle is " << RectangleArea<<endl;
     return 0;
 }
 //Hooray completed first simple code!

@@ -23,9 +23,9 @@ int main(){
     }
     //lets loop now using the for each looop in cpp
     //this style was introduced in 2011 cpp version 11
-    for (string i : cars){
-        cout<<i<<endl;
-    }
+    // for (string i : cars){
+    //     cout<<i<<endl;
+    // }
 
     //NB in CPP it is not a must to define the size of an array you can define the array with a number of values and the compiler will know the number of elements it contains
     //for example
@@ -36,6 +36,23 @@ int main(){
     myStrangeNumbers[1] = 8;
     myStrangeNumbers[2] = 4;
     //This will not work for the variable that has not been given a distinct number of values eg the array int numbers[]; can't be used to do the same unless you add the number of elements
+    //Multi dimensional arrays example
+    string letters[3][3] = {
+        {"Meshack", "Daniel", "Joseph"},
+        {"John","Anita", "Staicy"},
+        {"Maria", "Basil", "Jeremy"}
+    };
+    cout<<letters[0][2]<<endl;
+    letters[1][1] = "Baby";
+    cout<<letters[1][1];
+    cout<<"Lopping through each value in the multi dimensional array\n";
+    for(int i = 0; i<3;i++){
+        for(int j = 0; j<3; j++){
+            cout<<letters[i][j]<<endl;
+        }
+    }
+
+
 
     return 0;
 }
