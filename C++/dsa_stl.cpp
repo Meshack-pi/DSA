@@ -35,5 +35,7 @@ int main() {
     for (string car : cars){
         cout<<car<<"\n";
     }
+    //this is a for each loop introduced in c++ versionn 11 introduced in 2011
+    //more cleaner and readable
     return 0;
 }
