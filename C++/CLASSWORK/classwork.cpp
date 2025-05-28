@@ -5,7 +5,7 @@ uSING A US
 using namespace std;
 
 float meanarray(float mynum[],int n){
-    float total = 0, average;
+    float total = 0.0, average;
     for(int i=0;i<n;i++){
         total +=mynum[i];
     }
@@ -13,7 +13,8 @@ float meanarray(float mynum[],int n){
     return average;
 }
 int main() {
-    int n,count,average;
+    int n,count;
+    float average;
     cout<<"What is the number of elements: ";
     cin>>n;
     float mynum[n];
@@ -23,7 +24,7 @@ int main() {
         cin>>mynum[count];
     }
     cout<<endl;
-    average = (float)meanarray(mynum,n);
+    average = (float)meanarray(mynum,n); //Typecast to float, output in float form for accuracy
     cout<<"The mean of your array is: "<<average<<endl;
     return 0;
 }
